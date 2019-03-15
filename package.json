@@ -3,7 +3,7 @@
     "main": "./lib/history-manager-editor",
     "version": "0.1.0",
     "description": "Manage projects in Atom's history manager",
-    "keywords": [],
+    "keywords": ["history", "manage", "re-open", "reopen", "projects", "editor", "manager"],
     "activationCommands": {
         "atom-workspace": "history-manager-editor:toggle"
     },
