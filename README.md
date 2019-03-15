@@ -2,7 +2,9 @@
 
 This package allows you to manage your project history.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Material Light Theme](https://github.com/ahallicks/history-manager-editor/blob/master/ss-material.jpg)
+![Atom One Dark Theme](https://github.com/ahallicks/history-manager-editor/blob/master/ss-one-dark.jpg)
+![Atom One Light Theme](https://github.com/ahallicks/history-manager-editor/blob/master/ss-one-light.jpg)
 
 ### Installation
 The package can be installed through Atom. Alternatively, you can use `apm`:
