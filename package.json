@@ -1,7 +1,7 @@
 {
     "name": "history-manager-editor",
     "main": "./lib/history-manager-editor",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Manage projects in Atom's history manager",
     "keywords": [],
     "activationCommands": {
