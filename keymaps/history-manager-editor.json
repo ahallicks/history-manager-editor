@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "history-manager-editor:toggle"
+    "ctrl-alt-h": "history-manager-editor:toggle"
   }
 }
