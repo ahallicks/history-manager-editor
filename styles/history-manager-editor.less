@@ -1,0 +1,160 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import 'ui-variables';
+
+@package-card-background-color: lighten(@tool-panel-background-color, 8%);
+@package-card-background-color-hover: lighten(@tool-panel-background-color, 4%);
+
+.history-manager-editor {
+	display: flex;
+	flex-direction: column;
+	height: ~'calc(100vh - @{component-padding} * 6)';
+
+	.editor.mini {
+		min-height: 38px;
+	}
+
+	&--modal.modal.overlay {
+		bottom: auto;
+		height: ~'calc(100vh - @{component-padding} * 4)';
+		left: 50%;
+		margin-left: -400px;
+		max-width: none;
+		right: auto;
+		top: 20px;
+		width: 800px;
+	}
+
+	&--header {
+		border-bottom: 1px solid @package-card-background-color;
+		padding: @component-padding;
+	}
+
+	&--counter {
+		display: inline-block;
+		margin-left: 10px;
+
+		&:before {
+			content: '(';
+		}
+
+		&:after {
+			content: ')';
+		}
+	}
+
+	&--list {
+		flex: 1 1 auto;
+		margin: 0;
+		overflow: auto;
+		padding: @component-padding;
+	}
+
+	&--card {
+		align-items: center;
+		background-color: @package-card-background-color;
+		border: 1px solid @base-border-color;
+		border-radius: @component-border-radius * 2;
+		display: flex;
+		justify-content: space-between;
+		padding: @component-padding * 1.5;
+		transition: background-color .2s;
+
+		&:hover {
+			background-color: @package-card-background-color-hover;
+		}
+
+		&.package-card {
+			margin-bottom: 0 !important;
+		}
+
+		+ .history-manager-editor--card {
+			margin-top: @component-padding * 1.5;
+		}
+
+		&__project {
+			flex: 1 1 auto;
+
+			&--project {
+				display: block;
+
+				&[contenteditable] {
+					background-color: @input-background-color;
+				}
+			}
+		}
+
+		&__controls {
+			margin-left: @component-padding * 2;
+		}
+	}
+
+	// Splash loader
+
+	&--loader {
+		height: 100px;
+		margin: 40px auto;
+		position: relative;
+		width: 100px;
+
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+	}
+
+	&--circular {
+		animation: rotate 1.33s linear infinite;
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform-origin: center center;
+		width: 100%;
+
+		&__path {
+			animation: dash 1.5s ease-in-out infinite;
+			stroke: @text-color;
+			stroke-dasharray: 1, 200;
+			stroke-dashoffset: 0;
+			stroke-linecap: round;
+		}
+
+		&__path-outline {
+			stroke: fade(@text-color, 20%);
+		}
+	}
+
+	&--tooltip.tooltip {
+		z-index: 10000;
+	}
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -21px;
+	}
+
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}

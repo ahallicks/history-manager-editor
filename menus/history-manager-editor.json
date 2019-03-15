@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle History Manager Editor",
+        "command": "history-manager-editor:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "History Manager Editor",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "history-manager-editor:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
