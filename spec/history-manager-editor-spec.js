@@ -1,13 +1,13 @@
 'use babel';
 
-import RecentProjectEditor from '../lib/history-manager-editor';
+import HistoryManagerEditor from '../lib/history-manager-editor';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('RecentProjectEditor', () => {
+describe('HistoryManagerEditor', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
@@ -32,13 +32,13 @@ describe('RecentProjectEditor', () => {
       runs(() => {
         expect(workspaceElement.querySelector('.history-manager-editor')).toExist();
 
-        let recentProjectEditorElement = workspaceElement.querySelector('.history-manager-editor');
-        expect(recentProjectEditorElement).toExist();
+        let HistoryManagerEditorElement = workspaceElement.querySelector('.history-manager-editor');
+        expect(HistoryManagerEditorElement).toExist();
 
-        let recentProjectEditorPanel = atom.workspace.panelForItem(recentProjectEditorElement);
-        expect(recentProjectEditorPanel.isVisible()).toBe(true);
+        let HistoryManagerEditorPanel = atom.workspace.panelForItem(HistoryManagerEditorElement);
+        expect(HistoryManagerEditorPanel.isVisible()).toBe(true);
         atom.commands.dispatch(workspaceElement, 'history-manager-editor:toggle');
-        expect(recentProjectEditorPanel.isVisible()).toBe(false);
+        expect(HistoryManagerEditorPanel.isVisible()).toBe(false);
       });
     });
 
@@ -63,10 +63,10 @@ describe('RecentProjectEditor', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let recentProjectEditorElement = workspaceElement.querySelector('.history-manager-editor');
-        expect(recentProjectEditorElement).toBeVisible();
+        let HistoryManagerEditorElement = workspaceElement.querySelector('.history-manager-editor');
+        expect(HistoryManagerEditorElement).toBeVisible();
         atom.commands.dispatch(workspaceElement, 'history-manager-editor:toggle');
-        expect(recentProjectEditorElement).not.toBeVisible();
+        expect(HistoryManagerEditorElement).not.toBeVisible();
       });
     });
   });

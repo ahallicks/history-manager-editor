@@ -1,6 +1,6 @@
 # history-manager-editor package
 
-This package allows you to manage your project history.
+This package allows you to manage your project history. The history is stored in IndexDB so there's no easy way to edit it.
 
 
 ![Material Light Theme](https://github.com/ahallicks/history-manager-editor/blob/master/ss-material.jpg)
@@ -31,3 +31,4 @@ apm install history-manager-editor
 
 * Add new paths to a project
 * Clear all projects
+* Remove project editor state as an option as well?

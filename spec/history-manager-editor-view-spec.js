@@ -1,8 +1,8 @@
 'use babel';
 
-import RecentProjectEditorView from '../lib/history-manager-editor-view';
+import HistoryManagerEditorView from '../lib/history-manager-editor-view';
 
-describe('RecentProjectEditorView', () => {
+describe('HistoryManagerEditorView', () => {
   it('has one valid test', () => {
     expect('life').toBe('easy');
   });
