@@ -3,11 +3,11 @@
 This package allows you to manage your project history. The history is stored in IndexDB so there's no easy way to edit it.
 
 
-![Material Light Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/blob/master/ss-material.jpg)
+![Material Light Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/master/ss-material.jpg)
 
-![Atom One Dark Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/blob/master/ss-one-dark.jpg)
+![Atom One Dark Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/master/ss-one-dark.jpg)
 
-![Atom One Light Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/blob/master/ss-one-light.jpg)
+![Atom One Light Theme](https://raw.githubusercontent.com/ahallicks/history-manager-editor/master/ss-one-light.jpg)
 
 
 ### Installation
